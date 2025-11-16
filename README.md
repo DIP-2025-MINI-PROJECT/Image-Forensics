@@ -15,7 +15,7 @@ This project is a Digital Image Tampering Detector built in MATLAB for the Digit
 
 ### Dataset -
 1.  **CASIA 2.0 Image Tampering Detection Dataset:** A standard benchmark dataset for splicing and copy-move forgery. Available at: [Kaggle - CASIA 2.0](https://www.kaggle.com/datasets/divg07/casia-20-image-tampering-detection-dataset).
-2.  **Custom Dataset:** Created by manually splicing objects (e.g., inserting a flower into a grass field, adding a lion to a landscape) using photo editing tools like Photoshop or GIMP, saved as high-quality JPEGs to simulate realistic forgeries.
+2.  **Custom Dataset:** Created by manually splicing objects (e.g., inserting a centipede into a image of a sand, adding a cat to a backround image) using photo editing tools like Photoshop, GIMP, or edit with Microsoft paint saved as high-quality JPEGs to simulate realistic forgeries.
 
 ### Novelty -
 1.  **Evidence Fusion Algorithm:** Unlike single-method detectors, this project implements a weighted summation of five different forensic maps to reduce false positives and create a highly confident "Combined Suspicion Map."
@@ -30,7 +30,7 @@ This project is a Digital Image Tampering Detector built in MATLAB for the Digit
 * **Forensic Dashboard:** The system generates a 3x4 grid of subplots showing intermediate results (ELA, Noise Map, Edge Map) and the final decision.
 * **Final Output Image:** A fused "Tampering Overlay" where red pixels indicate high probability of forgery.
 
-![Example Output Dashboard](outputs/cat_output.jpeg)
+![Example Output Dashboard](outputs/cat_output.jpg)
 *(Note: This image serves as a visual proof of the tool's functionality on the custom dataset)*
 
 ## References:
@@ -38,5 +38,5 @@ This project is a Digital Image Tampering Detector built in MATLAB for the Digit
 2.  Fridrich, J., Soukal, D., & Lukáš, J. (2003). "Detection of Copy-Move Forgery in Digital Images." *Proceedings of DFRWS*.
 
 ## Limitations and Future Work:
-* **Computation Speed:** The Copy-Move detection algorithm is computationally expensive ($O(n^2)$) due to block matching. Future work could implement keypoint-based methods (SIFT/SURF) for faster performance.
+* **Computation Speed:** The Copy-Move detection algorithm is computationally expensive (O(n^2)) due to block matching. Future work could implement keypoint-based methods (SIFT/SURF) for faster performance.
 * **Robustness:** The current ELA and Artifact methods rely on JPEG compression traces. Future improvements could include deep learning models (CNNs) to detect manipulation in uncompressed (TIFF/PNG) images.
