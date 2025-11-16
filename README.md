@@ -30,7 +30,7 @@ This project is a Digital Image Tampering Detector built in MATLAB for the Digit
 * **Forensic Dashboard:** The system generates a 3x4 grid of subplots showing intermediate results (ELA, Noise Map, Edge Map) and the final decision.
 * **Final Output Image:** A fused "Tampering Overlay" where red pixels indicate high probability of forgery.
 
-![Example Output Dashboard](outputs/lion[1]_report.png)
+![Example Output Dashboard](outputs/cat_output.jpeg)
 *(Note: This image serves as a visual proof of the tool's functionality on the custom dataset)*
 
 ## References:
